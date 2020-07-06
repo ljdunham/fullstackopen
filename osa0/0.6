@@ -1,0 +1,14 @@
+title 0.6: Uusi muistiinpano (SPA)
+
+note over selain:
+Kirjoitetaan tekstikenttään ja painetaan save.
+Estetään normaali lähetysmekanismi ja kätetään omaa funktiota,
+joka lisää uuden muistiinpanon listaan.
+end note
+note over selain:
+päivitetty lista näkyy käyttäjälle
+end note
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over palvelin:
+uusi muistiinpano lisätään taulukkoon nimeltä notes
+end note

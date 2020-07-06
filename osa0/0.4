@@ -1,0 +1,19 @@
+title 0.4: uusi muistiinpano
+
+note over selain:
+kirjoitetaan tekstikenttään ja painetaan save
+end note
+selain->palvelin: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note
+note over palvelin:
+uusi muistiinpano lisätään taulukkoon nimeltä notes
+end note
+palvelin-->selain: 302 Found, Redirect /notes
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.css
+palvelin-->selain: main.css
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/main.js
+palvelin-->selain: main.js
+selain->palvelin: HTTP GET https://fullstack-exampleapp.herokuapp.com/data.json
+palvelin-->selain: data.json
+note over selain:
+päivitetty lista näkyy käyttäjälle
+end note
